@@ -53,6 +53,8 @@ class WordPress_Sniffs_WP_DeprecatedFunctionsSniff extends WordPress_AbstractFun
 	 * @var array
 	 */
 	private $deprecated_functions = array(
+
+		// WP 0.71.
 		'the_category_head' => array(
 			'alt'     => 'get_the_category_by_ID()',
 			'version' => '0.71',
@@ -62,20 +64,25 @@ class WordPress_Sniffs_WP_DeprecatedFunctionsSniff extends WordPress_AbstractFun
 			'version' => '0.71',
 		),
 
+		// WP 1.2.0.
 		'permalink_link' => array(
 			'alt'     => 'the_permalink()',
 			'version' => '1.2.0',
 		),
 
+		// WP 1.5.0.
 		'start_wp' => array(
 			'alt'     => 'the Loop',
 			'version' => '1.5.0',
 		),
+
+		// WP 1.5.1.
 		'get_postdata' => array(
 			'alt'     => 'get_post()',
 			'version' => '1.5.1',
 		),
 
+		// WP 2.0.0.
 		'create_user' => array(
 			'alt'     => 'wp_create_user()',
 			'version' => '2.0.0',
@@ -121,6 +128,7 @@ class WordPress_Sniffs_WP_DeprecatedFunctionsSniff extends WordPress_AbstractFun
 			'version' => '2.0.0',
 		),
 
+		// WP 2.1.0.
 		'dropdown_cats' => array(
 			'alt'     => 'wp_dropdown_categories()',
 			'version' => '2.1.0',
@@ -222,16 +230,19 @@ class WordPress_Sniffs_WP_DeprecatedFunctionsSniff extends WordPress_AbstractFun
 			'version' => '2.1.0',
 		),
 
+		// WP 2.2.0.
 		'comments_rss' => array(
 			'alt'     => 'get_post_comments_feed_link()',
 			'version' => '2.2.0',
 		),
 
+		// WP 2.3.0.
 		'permalink_single_rss' => array(
 			'alt'     => 'permalink_rss()',
 			'version' => '2.3.0',
 		),
 
+		// WP 2.5.0.
 		'comments_rss_link' => array(
 			'alt'     => 'post_comments_feed_link()',
 			'version' => '2.5.0',
@@ -281,6 +292,7 @@ class WordPress_Sniffs_WP_DeprecatedFunctionsSniff extends WordPress_AbstractFun
 			'version' => '2.5.0',
 		),
 
+		// WP 2.6.0.
 		'dropdown_categories' => array(
 			'alt'     => 'wp_category_checklist()',
 			'version' => '2.6.0',
@@ -290,6 +302,7 @@ class WordPress_Sniffs_WP_DeprecatedFunctionsSniff extends WordPress_AbstractFun
 			'version' => '2.6.0',
 		),
 
+		// WP 2.7.0.
 		'get_commentdata' => array(
 			'alt'     => 'get_comment()',
 			'version' => '2.7.0',
@@ -305,6 +318,7 @@ class WordPress_Sniffs_WP_DeprecatedFunctionsSniff extends WordPress_AbstractFun
 			'version' => '2.7.0',
 		),
 
+		// WP 2.8.0.
 		'__ngettext' => array(
 			'alt'     => '_n_noop()',
 			'version' => '2.8.0',
@@ -450,6 +464,7 @@ class WordPress_Sniffs_WP_DeprecatedFunctionsSniff extends WordPress_AbstractFun
 			'version' => '2.8.0',
 		),
 
+		// WP 2.9.0.
 		'_c' => array(
 			'alt'     => '_x()',
 			'version' => '2.9.0',
@@ -463,6 +478,7 @@ class WordPress_Sniffs_WP_DeprecatedFunctionsSniff extends WordPress_AbstractFun
 			'version' => '2.9.0',
 		),
 
+		// WP 3.0.0.
 		'add_option_update_handler' => array(
 			'alt'     => 'register_setting()',
 			'version' => '3.0.0',
@@ -548,6 +564,7 @@ class WordPress_Sniffs_WP_DeprecatedFunctionsSniff extends WordPress_AbstractFun
 			'version' => '3.0.0',
 		),
 
+		// WP 3.1.0.
 		'get_author_user_ids' => array(
 			'alt'     => '',
 			'version' => '3.1.0',
@@ -593,6 +610,7 @@ class WordPress_Sniffs_WP_DeprecatedFunctionsSniff extends WordPress_AbstractFun
 			'version' => '3.1.0',
 		),
 
+		// WP 3.2.0.
 		'favorite_actions' => array(
 			'alt'     => 'WP_Admin_Bar',
 			'version' => '3.2.0',
@@ -622,6 +640,7 @@ class WordPress_Sniffs_WP_DeprecatedFunctionsSniff extends WordPress_AbstractFun
 			'version' => '3.2.0',
 		),
 
+		// WP 3.3.0.
 		'add_contextual_help' => array(
 			'alt'     => 'get_current_screen()->add_help_tab()',
 			'version' => '3.3.0',
@@ -727,6 +746,7 @@ class WordPress_Sniffs_WP_DeprecatedFunctionsSniff extends WordPress_AbstractFun
 			'version' => '3.3.0',
 		),
 
+		// WP 3.4.0.
 		'add_custom_background' => array(
 			'alt'     => 'add_theme_support( \'custom-background\', $args )',
 			'version' => '3.4.0',
@@ -783,11 +803,14 @@ class WordPress_Sniffs_WP_DeprecatedFunctionsSniff extends WordPress_AbstractFun
 			'alt'     => 'update_post_cache()',
 			'version' => '3.4.0',
 		),
+
+		// WP 3.4.1.
 		'wp_explain_nonce' => array(
 			'alt'     => 'wp_nonce_ays()',
 			'version' => '3.4.1',
 		),
 
+		// WP 3.5.0.
 		'_get_post_ancestors' => array(
 			'alt'     => '',
 			'version' => '3.5.0',
@@ -841,6 +864,7 @@ class WordPress_Sniffs_WP_DeprecatedFunctionsSniff extends WordPress_AbstractFun
 			'version' => '3.5.0',
 		),
 
+		// WP 3.6.0.
 		'get_user_id_from_string' => array(
 			'alt'     => 'get_user_by()',
 			'version' => '3.6.0',
@@ -854,6 +878,7 @@ class WordPress_Sniffs_WP_DeprecatedFunctionsSniff extends WordPress_AbstractFun
 			'version' => '3.6.0',
 		),
 
+		// WP 3.7.0.
 		'_search_terms_tidy' => array(
 			'alt'     => '',
 			'version' => '3.7.0',
@@ -879,6 +904,7 @@ class WordPress_Sniffs_WP_DeprecatedFunctionsSniff extends WordPress_AbstractFun
 			'version' => '3.7.0',
 		),
 
+		// WP 3.8.0.
 		'get_screen_icon' => array(
 			'alt'     => '',
 			'version' => '3.8.0',
@@ -924,6 +950,7 @@ class WordPress_Sniffs_WP_DeprecatedFunctionsSniff extends WordPress_AbstractFun
 			'version' => '3.8.0',
 		),
 
+		// WP 3.9.0.
 		'_relocate_children' => array(
 			'alt'     => '',
 			'version' => '3.9.0',
@@ -949,6 +976,7 @@ class WordPress_Sniffs_WP_DeprecatedFunctionsSniff extends WordPress_AbstractFun
 			'version' => '3.9.0',
 		),
 
+		// WP 4.0.0.
 		'get_all_category_ids' => array(
 			'alt'     => 'get_terms()',
 			'version' => '4.0.0',
@@ -962,6 +990,7 @@ class WordPress_Sniffs_WP_DeprecatedFunctionsSniff extends WordPress_AbstractFun
 			'version' => '4.0.0',
 		),
 
+		// WP 4.1.0.
 		'add_tab' => array(
 			'alt'     => '',
 			'version' => '4.1.0',
@@ -979,6 +1008,7 @@ class WordPress_Sniffs_WP_DeprecatedFunctionsSniff extends WordPress_AbstractFun
 			'version' => '4.1.0',
 		),
 
+		// WP 4.2.0.
 		'prepreview_added_sidebars_widgets' => array(
 			'alt'     => 'customize_dynamic_setting_args()',
 			'version' => '4.2.0',
@@ -996,6 +1026,7 @@ class WordPress_Sniffs_WP_DeprecatedFunctionsSniff extends WordPress_AbstractFun
 			'version' => '4.2.0',
 		),
 
+		// WP 4.3.0.
 		'_preview_theme_stylesheet_filter' => array(
 			'alt'     => '',
 			'version' => '4.3.0',
@@ -1029,6 +1060,7 @@ class WordPress_Sniffs_WP_DeprecatedFunctionsSniff extends WordPress_AbstractFun
 			'version' => '4.3.0',
 		),
 
+		// WP 4.4.0.
 		'create_empty_blog' => array(
 			'alt'     => '',
 			'version' => '4.4.0',
@@ -1055,6 +1087,7 @@ class WordPress_Sniffs_WP_DeprecatedFunctionsSniff extends WordPress_AbstractFun
 			'version' => '4.4.0',
 		),
 
+		// WP 4.5.0.
 		'add_object_page' => array(
 			'alt'     => 'add_menu_page()',
 			'version' => '4.5.0',
@@ -1084,6 +1117,7 @@ class WordPress_Sniffs_WP_DeprecatedFunctionsSniff extends WordPress_AbstractFun
 			'version' => '4.5.0',
 		),
 
+		// WP 4.6.0.
 		'wp_embed_handler_googlevideo' => array(
 			'alt'     => '',
 			'version' => '4.6.0',
@@ -1093,6 +1127,7 @@ class WordPress_Sniffs_WP_DeprecatedFunctionsSniff extends WordPress_AbstractFun
 			'version' => '4.6.0',
 		),
 
+		// WP 4.7.0.
 		'_sort_nav_menu_items' => array(
 			'alt'     => 'wp_list_sort()',
 			'version' => '4.7.0',
@@ -1118,6 +1153,7 @@ class WordPress_Sniffs_WP_DeprecatedFunctionsSniff extends WordPress_AbstractFun
 			'version' => '4.7.0',
 		),
 
+		// WP 4.8.0.
 		'wp_dashboard_plugins_output' => array(
 			'alt'     => '',
 			'version' => '4.8.0',
