@@ -23,16 +23,16 @@ class WordPress_Tests_WP_DeprecatedFunctionsUnitTest extends AbstractSniffUnitTe
 	 */
 	public function getErrorList() {
 
-		$errors = array_fill( 8, 269, 1 );
+		$errors = array_fill( 8, 303, 1 );
 
 		// Unset the lines related to version comments.
 		unset(
-			$errors[10],  $errors[12],  $errors[14],  $errors[16],  $errors[28],
-			$errors[54],  $errors[56],  $errors[58],  $errors[71],  $errors[74],
-			$errors[78],  $errors[115], $errors[121], $errors[141], $errors[153],
-			$errors[157], $errors[185], $errors[204], $errors[218], $errors[222],
-			$errors[229], $errors[241], $errors[248], $errors[252], $errors[257],
-			$errors[262], $errors[270]
+			$errors[10],  $errors[12],  $errors[14],  $errors[16],  $errors[29],
+			$errors[55],  $errors[57],  $errors[59],  $errors[73],  $errors[76],
+			$errors[80],  $errors[118], $errors[125], $errors[161], $errors[175],
+			$errors[179], $errors[211], $errors[234], $errors[252], $errors[256],
+			$errors[263], $errors[275], $errors[282], $errors[286], $errors[291],
+			$errors[296], $errors[304]
 		);
 
 		return $errors;
@@ -45,11 +45,11 @@ class WordPress_Tests_WP_DeprecatedFunctionsUnitTest extends AbstractSniffUnitTe
 	 */
 	public function getWarningList() {
 
-		$warnings = array_fill( 282, 19, 1 );
+		$warnings = array_fill( 316, 20, 1 );
 
 		// Unset the lines related to version comments.
 		unset(
-			$warnings[289], $warnings[292], $warnings[299]
+			$warnings[323], $warnings[327], $warnings[334]
 		);
 
 		return $warnings;
