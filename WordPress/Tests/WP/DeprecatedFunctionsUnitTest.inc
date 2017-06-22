@@ -1,9 +1,9 @@
 <?php
-
 // DEPRECATED WORDPRESS FUNCTIONS.
 
-// Error.
-
+/*
+ * Error.
+ */
 /* ============ WP 0.71 ============ */
 the_category_head();
 the_category_ID();

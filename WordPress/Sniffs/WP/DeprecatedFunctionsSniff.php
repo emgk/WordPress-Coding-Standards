@@ -28,7 +28,7 @@ class WordPress_Sniffs_WP_DeprecatedFunctionsSniff extends WordPress_AbstractFun
 	 * this sniff by setting a property in a custom phpcs.xml ruleset.
 	 *
 	 * Example usage:
-	 * <rule ref="WordPress.WP.WP_DeprecatedFunctions">
+	 * <rule ref="WordPress.WP.DeprecatedFunctions">
 	 *  <properties>
 	 *   <property name="minimum_supported_version" value="4.3"/>
 	 *  </properties>
